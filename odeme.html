@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ödeme Ekranı | Emine'nin Mağazası</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">Emine'nin Mağazası</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menüyü aç">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li><a href="urunler.html">Ürünlerimiz</a></li>
+                <li><a href="urun-detay.html">Öne Çıkan Ürün</a></li>
+                <li><a href="sepet.html">Sepetim</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="oyun.html">Mini Oyun</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="form-container">
+            <h2>Kart ile Ödeme</h2>
+
+            <form id="odemeFormu">
+                <div class="form-group">
+                    <label for="kartAd">Kart Üzerindeki İsim:</label>
+                    <input type="text" id="kartAd" required placeholder="Ad Soyad">
+                </div>
+                <div class="form-group">
+                    <label for="kartNo">Kart Numarası:</label>
+                    <input type="text" id="kartNo" maxlength="16" required placeholder="0000 0000 0000 0000">
+                </div>
+                <div class="form-satir">
+                    <div class="form-group">
+                        <label for="skt">Son Kullanma (AA/YY):</label>
+                        <input type="text" id="skt" maxlength="5" required placeholder="MM/YY">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV (Güvenlik Kodu):</label>
+                        <input type="password" id="cvv" maxlength="3" required placeholder="000">
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Ödeme Yap</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Emine'nin Mağazası. Tüm Hakları Saklıdır.</p>
+            <p>Web Tasarımı ve İnternet Programlama Dersi Ödevidir.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html>
