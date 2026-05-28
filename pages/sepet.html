@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepetim | Emine'nin Mağazası</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">Emine'nin Mağazası</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menüyü aç">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li><a href="urunler.html">Ürünlerimiz</a></li>
+                <li><a href="urun-detay.html">Öne Çıkan Ürün</a></li>
+                <li><a href="sepet.html" class="active">Sepetim</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="oyun.html">Mini Oyun</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Alışveriş Sepetiniz</h2>
+        <br>
+
+        <ul id="sepet-listesi" class="sepet-listesi-kutu"></ul>
+
+        <p class="sepet-toplam">Toplam Tutar: <span id="toplam-fiyat">0</span> TL</p>
+
+        <div class="sepet-butonlar">
+            <button id="btn-temizle" class="btn-temizle">Sepeti Temizle</button>
+            <button id="btn-onayla" class="btn-onayla">Siparişi Tamamla</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Emine'nin Mağazası. Tüm Hakları Saklıdır.</p>
+            <p>Web Tasarımı ve İnternet Programlama Dersi Ödevidir.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html>

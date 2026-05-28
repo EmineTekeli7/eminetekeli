@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Oyun | Emine'nin Mağazası</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">Emine'nin Mağazası</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menüyü aç">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li><a href="urunler.html">Ürünlerimiz</a></li>
+                <li><a href="urun-detay.html">Öne Çıkan Ürün</a></li>
+                <li><a href="sepet.html">Sepetim</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="oyun.html" class="active">Mini Oyun</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="oyun-kutu" id="oyunAlani">
+            <h2>Sayı Tahmin Oyunu</h2>
+            <p class="oyun-aciklama">1 ile 100 arasında bir sayı tuttum. 7 hakkın var, bulabilir misin?</p>
+
+            <p id="oyunMesaj" class="oyun-mesaj">Tahminini gir ve başla!</p>
+            <p id="oyunDeneme" class="oyun-deneme">Kalan hak: 7 / 7</p>
+
+            <div class="oyun-girdi-satir">
+                <input type="number" id="oyunGirdi" class="oyun-girdi" min="1" max="100" placeholder="1-100">
+                <button id="tahminBtn" class="btn" onclick="tahminYap()">Tahmin Et</button>
+            </div>
+
+            <button class="btn" onclick="oyunuBaslat()">Yeniden Başla</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Emine'nin Mağazası. Tüm Hakları Saklıdır.</p>
+            <p>Web Tasarımı ve İnternet Programlama Dersi Ödevidir.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html>
